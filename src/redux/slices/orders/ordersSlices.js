@@ -58,7 +58,7 @@ export const placeOrderAction = createAsyncThunk(
         description: "Test Transaction",
         image: "../../../../public/logo512.png",
         order_id: order?.id,
-        callback_url: `${baseURL}/api/v1/orders/paymentVerification`,
+        callback_url: `${baseURL}/orders/paymentVerification`,
         prefill: {
           name: fullname,
           email,
