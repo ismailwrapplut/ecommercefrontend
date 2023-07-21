@@ -46,7 +46,7 @@ export const placeOrderAction = createAsyncThunk(
         },
         config
       );
-      const { data } = await axios.get("http://localhost:3030/getKey");
+      const { data } = await axios.get(`${baseURL}/getKey`);
       console.log(data);
       const { fullname, email } = getState()?.users?.userAuth?.userInfo;
 
@@ -58,7 +58,7 @@ export const placeOrderAction = createAsyncThunk(
         description: "Test Transaction",
         image: "../../../../public/logo512.png",
         order_id: order?.id,
-        callback_url: "http://localhost:3030/api/v1/orders/paymentVerification",
+        callback_url: `${baseURL}/api/v1/orders/paymentVerification`,
         prefill: {
           name: fullname,
           email,
