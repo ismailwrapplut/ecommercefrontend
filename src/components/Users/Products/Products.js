@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Products = ({ products }) => {
   return (
     <>
-      <div className="mt-6 grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-6 md:grid-cols-4 md:gap-y-0 lg:gap-x-8">
+      <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-3 lg:col-span-3 lg:gap-x-8">
         {products?.map((product) => (
           <Link
             to={`/products/${product._id}`}
