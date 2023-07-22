@@ -18,7 +18,9 @@ const products = [
 export default function PaymentFailed() {
   function redirect() {
     setTimeout(() => {
-      window.location.replace("http://localhost:3000/shopping-cart");
+      window.location.replace(
+        "https://sweet-pavlova-583392.netlify.app/shopping-cart"
+      );
     }, 5000);
   }
   return (

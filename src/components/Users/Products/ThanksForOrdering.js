@@ -18,7 +18,9 @@ const products = [
 export default function ThanksForOrdering() {
   function redirect() {
     setTimeout(() => {
-      window.location.replace("http://localhost:3000/customer-profile");
+      window.location.replace(
+        "https://sweet-pavlova-583392.netlify.app/customer-profile"
+      );
     }, 5000);
   }
   return (
