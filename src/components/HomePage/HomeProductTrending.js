@@ -66,7 +66,7 @@ const HomeProductTrending = () => {
                   ${product.price}.00
                 </p>
                 <p className="mt-1 text-sm text-gray-500">
-                  {product.description.slice(0, 30)}
+                  {product.description.slice(0, 30)}...
                 </p>
               </Link>
             ))}
