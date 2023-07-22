@@ -16,6 +16,7 @@ const products = [
 ];
 
 export default function PaymentFailed() {
+  console.log("hello");
   function redirect() {
     setTimeout(() => {
       window.location.replace(
